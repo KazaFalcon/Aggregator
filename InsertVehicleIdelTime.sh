@@ -70,7 +70,7 @@ if [ $statusCamera1 -eq 0 ] && [ $statusCamera2 -eq 0 ] && [ $statusCamera3 -eq 
 then
 	echo "ALL camera are offline"
 else
-	curl -X POST -i -H "Content-type: application/json" -X POST http://0f8202c8526b4c35aae76a654dd1e0a1.cloudapp.net/api/AgreegatorController/AddAggregatorStandingTime -d '
+	curl -X POST -i -H "Content-type: application/json" -X POST http://52.187.185.174/api/AgreegatorController/AddAggregatorStandingTime -d '
     	{
         	"AggregatorId":'$aggregatorId',
 		"StartDateTime":"2017-09-26 14:30:15" ,
